@@ -1,0 +1,60 @@
+// define meals 
+//Mushroom Rice Balls, Cheesy Omelette, Cheesy Hylian Pizza, Prime Meat and Rice Bowl
+// define materials
+// Hylian Rice, Big Hearty Truffle, Hateno Cheese, Bird Egg, Tabantha Wheat
+//const material = []
+//this is the function to add materials
+
+//const recipes = []
+function createRecipes(){
+    
+}
+//this is the function to add recipes
+materials = [{id: 1,description: 'Hylian Rice'},
+            {id: 2, description: 'Hateno Cheese'},
+            {id:3, description: 'Tabantha Wheat'},
+            {id: 4, description: 'Raw Prime Meat'},
+            {id: 5, description: 'Fresh Milk'},
+            {id: 6, description:  'Cane Sugar'},
+            {id: 7, description:  'Bird Egg'},
+            {id: 8, description:  'Raw Bird Thigh'},
+            {id: 9, description:   'Big Hearty Truffle'},
+            {id: 10,description:   'Goat Butter',}]
+//const materials =
+ 
+const materials = []
+
+//['Hylian Rice', 'Big Hearty Truffle', 'Tabantha Wheat', 'Raw Prime Meat', 'Hateno Cheese', 'Bird Egg','Fresh Milk']
+const recipeIngredients = {
+    'Mushroom Rice balls':[`Hylian Rice`, `Big Hearty Truffle`],
+    'Omelette':[`Hateno Cheese`, `Bird Egg`],
+    'Cheesy Hylian Pizza':[`Tabantha Wheat`, `Hateno Cheese`],
+    'Prime Meat and rice bowl':[`Raw Prime Meat`, `Hylian Rice`],
+    'Egg Pudding':[`Fresh Milk`, `Cane Sugar`,`Bird Egg`],
+    'Egg Tart' :[`Tabantha Wheat`, `Cane Sugar`, `Goat Butter`, `Bird Egg`],
+    'Chicken Egg Fried Rice':[`Hylian Rice`, `Raw Prime Meat`, `Bird Egg`],
+    'Poultry Pilaf' :[`Hylian Rice`,`Goat Butter`, `Bird Egg`, `Raw Bird Thigh`]
+};
+const meals = []
+
+// defining the cook function
+//we need to add a third parameter
+
+
+
+const cook = (firstIngredient, secondIngredient) => {
+    if (firstIngredient === 'Hylian Rice' && secondIngredient === 'Big Hearty Radish') {
+        meals.push('Mushroom Rice Balls')}
+    else if (firstIngredient === 'Hateno Cheese' && secondIngredient === 'Bird Egg')
+        meals.push('Cheesy Omelette')
+    }
+
+// calling the cook function
+cook(materials[0], materials[1])
+
+// logging meals
+console.log('MEALS:')
+console.log('---------------')
+for (const meal of meals) {
+    console.log(meal)
+}
